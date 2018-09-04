@@ -10,32 +10,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
 </head>
-<body class="body">
-    <header class="b-header">
-        <div class="b-header__sity-search">
-            <span b-header__sity>Город:</span>
-            <a href="javascript:void(0)" b-header__sity-name>Набережные челны</a>
-        </div>
-        <nav class="b-header__nav">
-            <ul class="b-header__list">
-                <li class="b-header__item">Магазины</li>
-                <li class="b-header__item">Программа лояльности</li>
-                <li class="b-header__item">Сервис и поддержка</li>
-                <li class="b-header__item">Статус заказа</li>
-                <li class="b-header__item">Акции</li>
-            </ul>
-        </nav>
-        <a href="tel:88007752100" class="b-header__tel">8 800 775 21 00</a>
-        <a href="javascript:void(0)" class="b-header__logo"><img src="img/logo.png" alt="logo" class="b-header__logo-image"></a>
-        <form action="javascript:void(0)" method="post" class="b-header__form">
-            <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
-        </form>
-        <div class="b-header__account">
-            <span b-header__account-cabinet>Кабинет</span>
-            <span b-header__account-enter>Войти</span>
-        </div>
-        <img src="img/icon_basket.png" alt="basket" class="b-header__backet">
-    </header>
+<body class="b-body">
+    <div class="b-container">
+        <header class="b-header">
+            <div class="b-header__sity-search">
+                <span class="b-header__sity">Город:</span>
+                <a href="javascript:void(0)" class="b-header__sity-name">Набережные челны</a>
+            </div>
+            <nav class="b-header__nav">
+                <ul class="b-header__list">
+                    <li><a href="javascript:void(0)" class="b-header__item">Магазины</a></li>
+                    <li><a href="javascript:void(0)" class="b-header__item">Программа лояльности</a></li>
+                    <li><a href="javascript:void(0)" class="b-header__item">Сервис и поддержка</a></li>
+                    <li><a href="javascript:void(0)" class="b-header__item">Статус заказа</a></li>
+                    <li><a href="javascript:void(0)" class="b-header__item b-header__item-other">Акции</a></li>
+                </ul>
+            </nav>
+            <a href="tel:88007752100" class="b-header__tel">8 800 775 21 00</a>
+            <a href="javascript:void(0)" class="b-header__logo"><img src="img/logo.png" alt="logo" class="b-header__logo-image"></a>
+            <form action="javascript:void(0)" method="post" class="b-header__form">
+                <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
+            </form>
+            <div class="b-header__account">
+                <span class="b-header__account-cabinet">Кабинет</span>
+                <span class="b-header__account-enter">Войти</span>
+            </div>
+            <a href="javascript:void(0)" class="b-header__backet"><img src="img/icon_basket.png" alt="basket" class="b-header__backet-image"></a>
+        </header>
+    </div>
     <main class="b-main">
         <section class="b-banners">
             <nav class="b-banners__nav">
@@ -52,51 +54,51 @@
             </nav>
             <div class="b-banners__slider">
                 <div class="b-banners__slider-titles">
-                    <h1 class="b-banners__slider-title">Каждый день <span b-banners__slider-span>товары со скидкой до 20%</span></h1>
+                    <h1 class="b-banners__slider-title">Каждый день <span class="b-banners__slider-span">товары со скидкой до 20%</span></h1>
                 </div>
             </div>
         </section>
         <section class="b-news">
             <div class="b-news__panel">
-                <h2 class="b-news__title">Лучшее и интересное</h2>
-                <div class="b-news__panel-item">
+                <h2 class="b-news__title b-title__h2">Лучшее и интересное</h2>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/icon_map.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">Бонус скидка 5%</span>
                     <span class="b-news__panel-text">Дополнительная скидка 5% при онлайн-покупке</span>
-                </div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_iphonese.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">Iphone SE</span>
                     <span class="b-news__panel-text">Малая форма в своей лучшей форме.</span>
-                </div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_coffeemachine.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">Как угодить кофеману</span>
                     <span class="b-news__panel-text">Поможем выбрать подарок</span>
-                </div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_fan.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">В игру вступают вентиляторы</span>
-                </div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_grill.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">Идеальный стейк автоматически</span>
                     <span class="b-news__panel-text">Умный гриль от BORK подскажет нужную степень прожарки.</span>
-                </div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_childseat.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">Ищем идеальное детское автокресло</span>
-                </div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_clock.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">Samsung Gear S2</span>
                     <span class="b-news__panel-text">Набор важнейших функций всегда под рукой</span>
-</div>
-                <div class="b-news__panel-item">
+                </a>
+                <a href="javascript:void(0)" class="b-news__panel-item">
                     <img src="img/image_sale.png" alt="image" class="b-news__panel-image">
                     <span class="b-news__panel-title">На радость малышам!</span>
                     <span class="b-news__panel-text">Скидка до 50% на игрушки 24-26 мая</span>
-                </div>
+                </a>
             </div>
             <div class="b-news__conditions">
                 <figure class="b-news__conditions-item">
@@ -118,7 +120,7 @@
             </div>
         </section>
         <section class="b-nav">
-            <h2 class="b-nav__title">Вдохновляющий выбор</h2>
+            <h2 class="b-nav__title b-title__h2">Вдохновляющий выбор</h2>
             <figure class="b-nav__item">
                 <img src="img/image_electronics.png" alt="image" class="b-nav__image">
                 <figcaption class="b-nav__figcaption">Электроника</figcaption>
@@ -154,16 +156,16 @@
         </section>
         <section class="b-brands">
            <div class="b-brands__head">
-                <h2 class="b-brands__title">Бренды</h2>
+                <h2 class="b-brands__title b-title__h2">Бренды</h2>
                 <button class="b-brands__button">Ко всем брендам</button>
             </div>
             <div class="b-brands__logotypes">
-                <img src="img/icon_lg.png" alt="logo">
-                <img src="img/icon_samsung.png" alt="logo">
-                <img src="img/icon_apple.png" alt="logo">
-                <img src="img/icon_canon.png" alt="logo">
-                <img src="img/icon_hp.png" alt="logo">
-                <img src="img/icon_dyson.png" alt="logo">
+                <img class="b-brands__logotypes-image" src="img/icon_lg.png" alt="logo">
+                <img class="b-brands__logotypes-image" src="img/icon_samsung.png" alt="logo">
+                <img class="b-brands__logotypes-image" src="img/icon_apple.png" alt="logo">
+                <img class="b-brands__logotypes-image" src="img/icon_canon.png" alt="logo">
+                <img class="b-brands__logotypes-image" src="img/icon_hp.png" alt="logo">
+                <img class="b-brands__logotypes-image" src="img/icon_dyson.png" alt="logo">
             </div>
             <div class="b-brands__sale">
                 <div class="b-brands__sale-titles">
@@ -174,7 +176,7 @@
             </div>
         </section>
         <section class="b-panel-products">
-            <h2 class="b-panel-products__title">Вас может заинтересовать</h2>
+            <h2 class="b-panel-products__title b-title__h2">Вас может заинтересовать</h2>
             <a href="javascript:void(0)" class="b-panel-products__item b-goods">
                 <img src="img/image_headphonesBeatsSolo.png" alt="image" class="b-goods__image">
                 <span class="b-goods__name">Проводные наушники Beats Solo 2 White</span>
@@ -210,9 +212,9 @@
             </div>
             <div class="b-info-products__banners">
                 <div class="b-info-products__banners-text">
-                    <h3 class="b-info-products__banners-title">Как выбрать фитнес-браслет</h3>
-                    <p class="b-info-products__banners-p">При покупке умного браслета учитывайте то, что они бывают с дисплеем и без. А так же обращайте внимание на размер, т.к. уменьшить браслет невозможно. ля нормальной работы гаджета не лишним будет наличие смартфона, и чем новее операционная система, тем лучше. Есть множество примеров, когда браслет является совершенно бесполезным без соответствующего приложения на телефоне.</p>
-                    <span class="b-info-products__banners-span b-question-choice">Как выбрать</span>
+                    <h3 class="b-info-products__banners-title b-title__h3">Как выбрать фитнес-браслет</h3>
+                    <p class="b-info-products__banners-p b-text">При покупке умного браслета учитывайте то, что они бывают с дисплеем и без. А так же обращайте внимание на размер, т.к. уменьшить браслет невозможно. ля нормальной работы гаджета не лишним будет наличие смартфона, и чем новее операционная система, тем лучше. Есть множество примеров, когда браслет является совершенно бесполезным без соответствующего приложения на телефоне.</p>
+                    <a href="javascript:void(0)" class="b-info-products__banners-span b-question-choice">Как выбрать</a>
                     <button class="b-info-products__banners-button b-read-more">Читать дальше</button>
                 </div>
                 <a href="javascript:void(0)" class="b-info-products__banners-goods b-goods">
@@ -221,7 +223,7 @@
                     <img src="img/image_fitnessBraceletJawboneUP3.png" alt="image" class="b-goods__image">
                     <span class="b-goods__name">Браслет Jawbone UP3 (JL04 - 6262ACH - EM) зелено-голубой</span>
                     <span class="b-goods__price b-goods__price--sale">10 290 <mark class="b-goods__ruble b-goods__price--sale">p.</mark></span>
-                    <span class="p-goods__take-away">Забрать самому сегодня</span>
+                    <span class="p-goods__delivery">Забрать самому сегодня</span>
                     <span class="b-goods__delivery">Доставим сегодня, бесплатно</span>
                     <form action="javascript:void(0)" method="post">
                         <input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating">
@@ -237,7 +239,7 @@
                     <img src="img/image_fitnessBraceletJawboneUP2.png" alt="image" class="b-goods__image">
                     <span class="b-goods__name">Браслет Jawbone UP2 (JL03 - 6064CHK-EM) овсяной</span>
                     <span class="b-goods__price">7 110 <mark class="b-goods__ruble">p.</mark></span>
-                    <span class="p-goods__take-away">Забрать самому сегодня</span>
+                    <span class="p-goods__delivery">Забрать самому сегодня</span>
                     <span class="b-goods__delivery">Доставим сегодня, бесплатно</span>
                      <form action="javascript:void(0)" method="post">
                         <input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating">
@@ -251,9 +253,9 @@
             </div>
             <div class="b-info-products__article">
                 <div class="b-info-products__article-text">
-                    <h3 class="b-info-products__article-title">Какой ноутбук выбрать для работы</h3>
-                    <p class="b-info-products__article-p">Отправляяесь в магазин за новым ноутбуком, можно растеряться, глядя на множество представленных моделей. Стоимость н является определяющим фактором - подобрать подходящее устройство удается с учетом любого бюджета. Потому необходимо определиться со своими предпочтениями. Не имея достаточного опыта, сложно понять, на какие качества и функции стоит обратить внимание в первую очередь. Давайте разберемся, что нужно учесть, чтобы покупка оказалась максимально полезной и эффективной.</p>
-                    <span class="b-info-products__article-span b-question-choice">Как выбрать</span>
+                    <h3 class="b-info-products__article-title b-title__h3">Какой ноутбук выбрать для работы</h3>
+                    <p class="b-info-products__article-p b-text">Отправляяесь в магазин за новым ноутбуком, можно растеряться, глядя на множество представленных моделей. Стоимость н является определяющим фактором - подобрать подходящее устройство удается с учетом любого бюджета. Потому необходимо определиться со своими предпочтениями. Не имея достаточного опыта, сложно понять, на какие качества и функции стоит обратить внимание в первую очередь. Давайте разберемся, что нужно учесть, чтобы покупка оказалась максимально полезной и эффективной.</p>
+                    <a href="javascript:void(0)" class="b-info-products__article-span b-question-choice">Как выбрать</a>
                     <button class="b-info-products__article-button b-read-more">Читать дальше</button>
                     <button class="b-info-products__article-button b-all-goods">Все товары</button>
                 </div>
@@ -262,7 +264,7 @@
                     <img src="img/image_laptopNoName.png" alt="image" class="b-goods__image">
                     <span class="b-goods__name">Браслет Jawbone UP3 (JL04 - 6262ACH - EM) зелено-голубой</span>
                     <span class="b-goods__price">34 990 <mark class="b-goods__ruble">p.</mark></span>
-                    <span class="p-goods__take-away">Забрать самому сегодня</span>
+                    <span class="p-goods__delivery">Забрать самому сегодня</span>
                     <span class="b-goods__delivery">Доставим сегодня, бесплатно</span>
                     <form action="javascript:void(0)" method="post">
                         <input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating">
@@ -277,7 +279,7 @@
                     <img src="img/image_laptopAppleMacBook.png" alt="image" class="b-goods__image">
                     <span class="b-goods__name">Ноутбук Apple MacBook 12.0 MK4N2RU/A золот.</span>
                     <span class="b-goods__price">104 990 <mark class="b-goods__ruble">p.</mark></span>
-                    <span class="p-goods__take-away">Забрать самому сегодня</span>
+                    <span class="p-goods__delivery">Забрать самому сегодня</span>
                     <span class="b-goods__delivery">Доставим сегодня, бесплатно</span>
                      <form action="javascript:void(0)" method="post">
                         <input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating">
@@ -291,12 +293,12 @@
             </div>
         </section>
         <section class="b-recent">
-            <h2 class="b-recent__title">Вы недавно просматривали</h2>
+            <h2 class="b-recent__title b-title__h2">Вы недавно просматривали</h2>
             <a href="javascript:void(0)" class="b-recent__goods">
                 <img src="img/image_tvLG55U.png" alt="image" class="b-recent__goods-image">
                 <div class="b-recent__goods-text">
                     <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
-                    <span class=" b-recent__goods-price b-goods__price">76 190 <mark class="b-recent__goods-ruble b-goods__ruble">p.</mark></span>
+                    <span class="b-recent__goods-price b-goods__price">76 190 <mark class="b-recent__goods-ruble b-goods__ruble">p.</mark></span>
                 </div>
             </a>
             <a href="javascript:void(0)" class="b-recent__goods">
@@ -322,7 +324,7 @@
             </a>
         </section>
         <section class="b-feedback">
-            <h2 class="b-feedback__title">Оставайтесь на связи</h2>
+            <h2 class="b-feedback__title b-title__h2">Оставайтесь на связи</h2>
             <span class="b-feedback__text">Узнавайте о выгодных предложениях и получайте персональные рекомендации</span>
             <form action="javascript:void(0)" method="post" class="b-feedback__forms">
                 <input type="email" class="b-feedback__email" id="feedback-email" name="email">

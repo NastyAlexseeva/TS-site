@@ -1,0 +1,669 @@
+/*fonts*/
+@font-face {
+    font-family: "MuseoSansCyrl300";
+    src:url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl500";
+    src:url("../fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl700";
+    src:url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl900";
+    src:url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff");
+    font-weight: 900;
+}
+/*fonts*/
+
+/*body и общие классы*/
+
+.b-body {
+    margin: 0;
+    padding: 0;
+}
+
+.b-container {
+    padding: 0px 45px 0px 45px;
+}
+
+.b-title__h2 {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 25px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    flex:0 1 100%;
+}
+
+.b-title__h3 {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 35px;
+}
+
+.b-text {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 15px;
+}
+
+.b-question-choice {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 13px;
+}
+
+.b-read-more {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #ffdc00;
+    color: #000000;
+    margin: 0;
+    padding: ;
+}
+
+.b-all-goods {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    border: ;
+    margin: 0;
+    padding: ;
+}
+
+/*goods*/
+
+.b-goods {
+    
+}
+
+.b-goods__image {
+    
+}
+
+.b-goods__name {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+}
+
+.b-goods__price {
+    font-family: MuseoSansCyrl900, sans-serif;
+    font-size: 15px;
+}
+
+.b-goods__hit {
+    font-family: MuseoSansCyrl900, sans-serif;
+    font-size: 11px;
+}
+
+.b-goods__share {
+    font-family: MuseoSansCyrl900, sans-serif;
+    font-size: 11px;
+}
+
+.b-goods__image {
+    
+}
+
+.b-goods__name {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+}
+
+.b-goods__price {
+    font-family: MuseoSansCyrl900, sans-serif;
+    font-size: 15px;
+}
+
+.b-goods__price--sale {
+    
+}
+
+.b-goods__ruble {
+    font-family: MuseoSansCyrl900, sans-serif;
+    font-size: 15px;
+}
+
+.p-goods__delivery {
+    font-family: MuseoSansCyrl300, sans-serif;
+    font-size: 13px;
+}
+
+.goods-rating {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 13px;
+}
+
+
+/*header*/
+
+.b-header {
+    padding-top: 15px;
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.b-header__sity-search {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    flex: 0 0 20%;
+}
+
+.b-header__sity {
+    
+}
+
+.b-header__sity-name {
+    text-decoration: none;
+    border-bottom: 1px dashed #666666;
+    color: #666666;
+}
+
+.b-header__nav {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 13px; 
+    text-transform: uppercase;
+    flex: 0 0 60%;
+}
+
+.b-header__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-header__item {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #666666;
+}
+
+.b-header__item-other {
+    color: #eb2e2c;
+}
+
+.b-header__tel {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+    color: #333333;
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+    flex: 0 0 20%;
+}
+
+.b-header__logo {
+    max-width: 210px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 20%;
+}
+
+.b-header__logo-image {
+    width: 100%;
+    height: auto;
+}
+
+.b-header__form {
+    font-family: MuseoSansCyrl300, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 60%;
+    position: relative;
+}
+
+.b-header__form::after {
+    content: "";
+    background: url("../img/icon_search.png") no-repeat;
+    position: absolute;
+}
+
+.b-header__search {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.b-header__account {
+    font-size: 13px;
+    flex: 0 0 10%;
+}
+
+.b-header__account-cabinet {
+    font-family: MuseoSansCyrl700, sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    display: block;
+}
+
+.b-header__account-enter {
+    font-family: MuseoSansCyrl500, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: block;
+}
+
+.b-header__backet {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 13px;
+    flex: 0 0 10%;
+}
+
+.b-header__backet-image {
+    
+}
+
+/*main*/
+
+.b-main {
+    
+}
+
+/*banners*/
+
+.b-banners {
+    
+}
+
+.b-banners__nav {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+}
+
+.b-banners__list {
+    
+}
+
+.b-banners__item {
+    
+}
+
+.b-banners__slider {
+    
+}
+
+.b-banners__slider-titles {
+    font-size: 48px;
+}
+
+.b-banners__slider-title {
+    font-family: MuseoSansCyrl700, sans-serif;
+}
+
+.b-banners__slider-span {
+    font-family: MuseoSansCyrl300, sans-serif;
+}
+
+/*news*/
+
+.b-news {
+    
+}
+
+.b-news__panel {
+    
+}
+
+.b-news__title {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+}
+
+.b-news__panel-item {
+    
+}
+
+.b-news__panel-image {
+    
+}
+
+.b-news__panel-title {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 20px;
+}
+
+.b-news__panel-text {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 15px;
+}
+
+.b-news__conditions {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 13px;
+}
+
+.b-news__conditions-item {
+    
+}
+
+.b-news__condition-image {
+    
+}
+
+.b-news__condition-figcaption {
+    
+}
+
+/*nav*/
+
+.b-nav {
+    
+}
+
+.b-nav__title {
+    
+}
+
+.b-nav__item {
+    
+}
+
+.b-nav__image {
+    
+}
+
+.b-nav__figcaption {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 20px;
+}
+
+/*brands*/
+
+.b-brands {
+    
+}
+
+.b-brands__head {
+    
+}
+
+.b-brands__title {
+    
+}
+
+.b-brands__button {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 13px;
+}
+
+.b-brands__logotypes {
+    
+}
+
+.b-brands__logotypes-image {
+    
+}
+
+.b-brands__sale {
+    
+}
+
+.b-brands__sale-titles {
+    font-size: 25px;
+}
+
+.b-brands__sale-title {
+    font-family: MuseoSansCyrl500, sans-serif;
+}
+
+.b-brands__sale-text {
+    font-family: MuseoSansCyrl300, sans-serif;
+}
+
+.b-brands__sale-image {
+    
+}
+
+/*products*/
+
+.b-panel-products {
+    
+}
+
+.b-panel-products__title {
+    
+}
+
+.b-panel-products__item {
+    
+}
+
+/*info-products*/
+
+.b-info-products {
+    
+}
+
+.b-info-products__title {
+    font-family: MuseoSansCyrl300, sans-serif;
+    font-size: 30px;
+}
+
+.b-info-products__title-span {
+    font-family: MuseoSansCyrl700, sans-serif;
+}
+
+.b-info-products__tabs {
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 15px;
+}
+
+.b-info-products__tabs-list {
+    
+}
+
+.b-info-products__tabs-item {
+    
+}
+
+.b-info-products__tabs-button {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 15px;
+}
+
+.b-info-products__banners {
+    
+}
+
+.b-info-products__banners-text {
+    
+}
+
+.b-info-products__banners-title {
+    
+}
+
+
+.b-info-products__banners-p {
+    
+}
+
+.b-info-products__banners-span {
+    
+}
+
+.b-info-products__banners-button {
+    
+}
+
+.b-info-products__banners-goods {
+    
+}
+
+/*article*/
+
+.b-info-products__article {
+    
+}
+
+.b-info-products__article-text {
+    
+}
+
+.b-info-products__article-title {
+    
+}
+
+.b-info-products__article-p {
+    
+}
+
+.b-info-products__article-span {
+    
+}
+
+.b-info-products__article-button {
+    
+}
+
+.b-info-products__article-button {
+    
+}
+
+.b-info-products__article-goods {
+    
+}
+
+/*recent*/
+
+.b-recent {
+    
+}
+
+.b-recent__title {
+    
+}
+
+.b-recent__goods {
+    
+}
+
+.b-recent__goods-image {
+    
+}
+
+.b-recent__goods-text {
+    
+}
+
+.b-recent__goods-name {
+    
+}
+
+.b-recent__goods-price {
+    
+}
+
+.b-recent__goods-ruble {
+    
+}
+
+/*feedback*/
+
+.b-feedback {
+    
+}
+
+.b-feedback__title {
+    
+}
+
+.b-feedback__text {
+    
+}
+
+.b-feedback__forms {
+    
+}
+
+.b-feedback__email {
+    
+}
+
+.b-feedback__button {
+    
+}
+
+/*footer*/
+
+.b-footer {
+    
+}
+
+.b-footer__content {
+    
+}
+
+.b-footer__content-info {
+    
+}
+
+.b-footer__content-list {
+    
+}
+
+.b-footer__content-title {
+    
+}
+
+.b-footer__content-item {
+    
+}
+
+.b-footer__content-tel {
+    
+}
+
+.b-footer__content-num {
+    
+}
+
+.b-footer__content-text {
+    
+}
+
+.b-footer__content-links {
+    
+}
+
+.b-footer__content-link {
+    
+}
+
+.b-footer__copyright {
+    
+}
+
+.b-footer__copyright-info {
+    
+}
+
+.b-footer__copyright-design {
+    
+}
+
+.b-footer__copyright-image {
+    
+}
+
+.b-footer__copyright-text {
+    
+}
