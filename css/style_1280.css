@@ -32,7 +32,7 @@
 }
 
 .b-container {
-    padding: 0px 28px 0px 45px;
+    padding: 0px 45px 0px 45px;
 }
 
 .b-title__h2 {
@@ -148,17 +148,21 @@
 .b-header {
     padding-top: 16px;
     color: #666666;
+    margin-bottom: 20px;
+}
+
+.b-header__top-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 13px;
 }
 
 .b-header__sity-search {
     font-family: MuseoSansCyrl500, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
-    flex: 0 0 18.8%;
+    flex: 0 0 18.9%;
 }
 
 .b-header__sity {
@@ -219,12 +223,24 @@
     flex: 0 0 auto;
 }
 
+.b-header__bottom-wrapper {
+    border-top: 1px solid #666666;
+    padding-top: 19px;
+}
+
+.b-header__bottom-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .b-header__logo {
     max-width: 210px;
     height: 42px;
     margin: 0;
     padding: 0;
     flex: 0 0 auto;
+    margin-right: 28px;
 }
 
 .b-header__logo-image {
@@ -237,20 +253,28 @@
     font-size: 15px;
     margin: 0;
     padding: 0;
-    flex: 0 0 60%;
+    padding-top: 2px;/*отступ как у pixel perfect*/
+    flex: 0 0 58%;
     position: relative;
 }
 
-.b-header__form::after {
+.b-header__form::before {
     content: "";
     background: url("../img/icon_search.png") no-repeat;
     position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 11px;
+    right: -8px;
 }
 
 .b-header__search {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 10px 13px;
+    font-family: MuseoSansCyrl300, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
 }
 
 .b-header__account {
@@ -258,28 +282,63 @@
     flex: 0 0 auto;
 }
 
+.b-header__account-text {
+    display: inline-block;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 17px;
+    vertical-align: top;
+    padding-top: 6px;
+    line-height: 15px;
+}
+
 .b-header__account-cabinet {
     font-family: MuseoSansCyrl700, sans-serif;
     color: #333333;
     text-transform: uppercase;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .b-header__account-enter {
     font-family: MuseoSansCyrl500, sans-serif;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 9px;
     display: block;
+    letter-spacing: 1.1px;
+    margin: 0;
+    padding: 0;
 }
 
 .b-header__backet {
     font-family: MuseoSansCyrl500, sans-serif;
     font-size: 13px;
-    flex: 0 0 auto;
+    display: inline-block;
+    border-left: 1px solid #666666;
+    padding: 0;
+    margin: 0;
+    padding-left: 21px;
+    height: 40px;
+    text-decoration: none;
+    position: relative;
+    color: #666666;
+}
+
+.b-header__backet::before {
+    content: "13";
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    background: #ffdc00;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 .b-header__backet-image {
-    
+    margin-right: 3px;/*pixelperfect*/
+    padding-top: 5px;/*pixelperfect*/
 }
 
 /*main*/
@@ -291,9 +350,9 @@
 /*banners*/
 
 .b-banners {
-    background: url(../img/background_header.png) no-repeat;
+    background: url(../img/background_header.png) no-repeat bottom left;
     background-size: auto;
-    height: 430px;/**/
+    margin-bottom: 60px;
 }
 
 .b-banners__nav {
@@ -301,6 +360,7 @@
     font-size: 15px;
     text-transform: uppercase;
     background: #ffdc00;
+    padding: 23px 0 19px 0;
 }
 
 .b-banners__list {
@@ -324,35 +384,45 @@
 }
 
 .b-banners__slider {
-    height: 100%;
+    height: 428px;
     background-image: radial-gradient(circle, #ffdc00 50%, transparent 50%),
                       linear-gradient(to right, transparent 50%, #ffdc00 50%);
-    background-position: 110px 0;
     background-repeat: no-repeat;
+    background-position: 110px 0;
     position: relative;
 }
 
 .b-banners__slider-titles {
-    font-size: 48px;
+    font-size: 32px;
+    font-family: MuseoSansCyrl700, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    line-height: 58px;
     padding: 0;
     margin: 0;
     text-align: center;
     vertical-align: bottom;
     position: absolute;
-    top: 100px;
-    right: 40px;
+    top: 58px;
+    right: 145px;
+    max-width: 600px;
+}
+
+.b-banners__slider-icon {
+    position: relative;/*pixelperfect*/
+    right: 3px;/*pixelperfect*/
+    top: -2px;/*pixelperfect*/
 }
 
 .b-banners__slider-title {
-    font-family: MuseoSansCyrl700, sans-serif;
     padding: 0;
     margin: 0;
-    display: block;
-    
+    display: block;  
 }
 
 .b-banners__slider-span {
     font-family: MuseoSansCyrl300, sans-serif;
+    font-weight: 300;
     padding: 0;
     margin: 0;
     display: block;

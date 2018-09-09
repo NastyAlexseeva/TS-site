@@ -11,33 +11,43 @@
         <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
 </head>
 <body class="b-body">
-    <div class="b-container">
-        <header class="b-header">
-            <div class="b-header__sity-search">
-                <span class="b-header__sity">Город:</span>
-                <a href="javascript:void(0)" class="b-header__sity-name">Набережные челны</a>
+    <header class="b-header">
+            <div class="b-container">
+                <div class="b-header__top-head">
+                    <div class="b-header__sity-search">
+                        <span class="b-header__sity">Город:</span>
+                        <a href="javascript:void(0)" class="b-header__sity-name">Набережные челны</a>
+                     </div>
+                    <nav class="b-header__nav">
+                        <ul class="b-header__list">
+                            <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Магазины</a></li>
+                            <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Программа лояльности</a></li>
+                            <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Сервис и поддержка</a></li>
+                            <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Статус заказа</a></li>
+                            <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link b-header__item-other">Акции</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:88007752100" class="b-header__tel">8 800 775 21 00</a>
+                </div>
             </div>
-            <nav class="b-header__nav">
-                <ul class="b-header__list">
-                    <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Магазины</a></li>
-                    <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Программа лояльности</a></li>
-                    <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Сервис и поддержка</a></li>
-                    <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Статус заказа</a></li>
-                    <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link b-header__item-other">Акции</a></li>
-                </ul>
-            </nav>
-            <a href="tel:88007752100" class="b-header__tel">8 800 775 21 00</a>
-            <a href="javascript:void(0)" class="b-header__logo"><img src="img/logo.png" alt="logo" class="b-header__logo-image"></a>
-            <form action="javascript:void(0)" method="post" class="b-header__form">
-                <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
-            </form>
-            <div class="b-header__account">
-                <span class="b-header__account-cabinet">Кабинет</span>
-                <span class="b-header__account-enter">Войти</span>
+        <div class="b-header__bottom-wrapper"><!--Для линии под верхним блоком-->
+            <div class="b-container">
+                <div class="b-header__bottom-head">
+                    <a href="javascript:void(0)" class="b-header__logo"><img src="img/logo.png" alt="logo" class="b-header__logo-image"></a>
+                    <form action="javascript:void(0)" method="post" class="b-header__form">
+                        <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
+                    </form>
+                    <div class="b-header__account">
+                        <a class="b-header__account-text">
+                            <span class="b-header__account-cabinet">Кабинет</span>
+                            <span class="b-header__account-enter">Войти</span>
+                        </a>
+                        <a href="javascript:void(0)" class="b-header__backet"><img src="img/icon_basket.png" alt="basket" class="b-header__backet-image"></a>
+                    </div>
+                </div>
             </div>
-            <a href="javascript:void(0)" class="b-header__backet"><img src="img/icon_basket.png" alt="basket" class="b-header__backet-image"></a>
+        </div>
         </header>
-    </div>
     <main class="b-main">
         <section class="b-banners">
             <nav class="b-banners__nav">
