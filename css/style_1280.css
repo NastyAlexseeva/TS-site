@@ -82,21 +82,26 @@
 /*goods*/
 
 .b-goods {
-    
 }
 
 .b-goods__image {
-    
+    display: block;
+    margin: 0 auto;
 }
 
 .b-goods__name {
     font-family: MuseoSansCyrl700, sans-serif;
     font-size: 15px;
+    color: #666666;
+    line-height: 22px;
 }
 
 .b-goods__price {
-    font-family: MuseoSansCyrl900, sans-serif;
-    font-size: 15px;
+    font-family: MuseoSansCyrl800, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: -2px;
 }
 
 .b-goods__hit {
@@ -109,27 +114,17 @@
     font-size: 11px;
 }
 
-.b-goods__image {
-    
-}
-
-.b-goods__name {
-    font-family: MuseoSansCyrl700, sans-serif;
-    font-size: 15px;
-}
-
-.b-goods__price {
-    font-family: MuseoSansCyrl900, sans-serif;
-    font-size: 15px;
-}
 
 .b-goods__price--sale {
     
 }
 
 .b-goods__ruble {
-    font-family: MuseoSansCyrl900, sans-serif;
-    font-size: 15px;
+    font-family: MuseoSansCyrl800, sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    color: #000000;
+    background: none;
 }
 
 .p-goods__delivery {
@@ -291,6 +286,8 @@
     vertical-align: top;
     padding-top: 6px;
     line-height: 15px;
+    text-decoration: none;
+    color: #666666;
 }
 
 .b-header__account-cabinet {
@@ -393,43 +390,30 @@
     position: relative;
 }
 
-.b-banners__arrow-left {
-    background: rgba(0, 0, 0, 0.1);
+.b-banners__arrow {
     position: absolute;
-    padding: 0;
     padding: 5px;
     border-radius: 5%;
     width: 35px;
     height: 35px;
-    top: 46%;
-    left: 43px;
     border: none;
 }
 
-.b-banners__arrow-left .b-banners__arrow-image {
-    transform: scale(-1);
-    width: 100%;
-    height: auto;
-    filter: invert(1);
+.b-banners__arrow-left {
+    top: 46%;
+    left: 43px;
+    background: rgba(0, 0, 0, 0.1) url(../img/icon_arrow-white.png) no-repeat;
+    background-size: 40%;
+    background-position: center;
+    transform: scale(-1,1);
 }
 
 .b-banners__arrow-right {
-    background: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    padding: 0;
-    padding: 5px;
-    border-radius: 5%;
-    width: 35px;
-    height: 35px;
     top: 45.6%;
     right: 45px;
-    border: none;
-}
-
-.b-banners__arrow-right .b-banners__arrow-image {
-    width: 100%;
-    height: auto;
-    filter: invert(1);
+    background: rgba(0, 0, 0, 0.1) url(../img/icon_arrow-white.png) no-repeat;
+    background-size: 40%;
+    background-position: center;
 }
 
 .b-banners__slider-titles {
@@ -476,14 +460,17 @@
 
 .b-banners__slider-point {
     display: inline-block;
+    padding: 0;
+    margin: 0;
     margin-right: 6px;
     border-radius: 50%;
     background:rgba(0, 0, 0, 0.2);
     height: 10px;
     width: 10px;
+    border: 0;
 }
 
-.b-banners__slider-point:nth-child(4) {
+.b-banners__slider-point:nth-child(4):active {
     background:rgba(0, 0, 0, 0.6);
 }
 
@@ -574,11 +561,16 @@
 
 .b-news__panel-item:nth-of-type(3) .b-news__panel-text {
     flex: 1;
+    margin-right: 5px;
 }
 
 .b-news__panel-item:nth-of-type(4) {
     flex: 0 0 calc(25% - 10px);
-    background: #95e27a;
+    background-image: radial-gradient(#95e27a 50%, transparent 50%),
+                      linear-gradient( to top, #95e27a 50%, transparent 50%);
+    background-position: -70px 20px;
+    background-repeat: no-repeat;
+    background-size: 150%;
     margin-right: 10px;
     margin-bottom: 11px;
     text-align: center;
@@ -591,6 +583,7 @@
 
 .b-news__panel-item:nth-of-type(4) .b-news__panel-title {
     line-height: 25px;
+    padding-left: 5px;
 }
 
 .b-news__panel-item:nth-of-type(5) {
@@ -634,7 +627,11 @@
 
 .b-news__panel-item:nth-of-type(7) {
     flex: 0 0 calc(25% - 10px);
-    background: #8dcdff;
+    background-image: radial-gradient(#8dcdff 50%, transparent 50%),
+                      linear-gradient( to top, #8dcdff 50%, transparent 50%);
+    background-position: -70px 20px;
+    background-repeat: no-repeat;
+    background-size: 150%;
     margin-right: 10px;
     text-align: center;
 }
@@ -744,7 +741,7 @@
 .b-news__condition-figcaption {
     flex:  0 0 50%;
     text-transform: uppercase;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 /*nav*/
@@ -754,6 +751,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 121px;
 }
 
 .b-nav__title {
@@ -762,160 +760,239 @@
 }
 
 .b-nav__item {
-    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
     flex: 0 0 25%;
-    height: 200px;
+    margin-bottom: 40px;
+}
+
+.b-nav__item:nth-of-type(5),
+.b-nav__item:nth-of-type(6),
+.b-nav__item:nth-of-type(7),
+.b-nav__item:nth-of-type(8) {
+    margin-bottom: 0;
 }
 
 .b-nav__item-image {
     margin: 0;
     padding: 0;
+    height: 270px;
 }
 
-.b-nav__item:nth-of-type(1) {
-    background:  #8dcdff url(../img/image_electronics.png) no-repeat;
-    background-position: 40% -10%;
-    
+.b-nav__item-electronics {
+    background: #8dcdff url(../img/image_electronics.png) no-repeat;
+    background-position: 43px 18px;
+    margin-bottom: 16px;
+    margin-right: 5px;
 }
 
-.b-nav__item:nth-of-type(2) {
+.b-nav__item-homeappliances {
     background: #c694cb url(../img/image_homeappliances.png) no-repeat;
+    background-position: -55px 12px;
+    margin-bottom: 16px;
+    margin-right: 5px;
 }
 
-.b-nav__item:nth-of-type(3) {
-    background: url(../img/image_repairanddacha.png) no-repeat;
+.b-nav__item-repair {
+    background: #95e27a url(../img/image_repairanddacha.png) no-repeat;
+    background-position: 23px 14px;
+    margin-bottom: 16px;
+    margin-right: 5px;
 }
 
-.b-nav__item:nth-of-type(4) {
-    background: url(../img/image_children'sgoods.png) no-repeat;
+.b-nav__item-childrens {
+    background: #ffdc00 url(../img/image_childrensgoods.png) no-repeat;
+    background-position: 73px -10px;
+    margin-bottom: 16px;
 }
 
-.b-nav__item:nth-of-type(5) {
-    background: url(../img/image_furniture.png) no-repeat;
+.b-nav__item-_furniture {
+    background: #ffdc00 url(../img/image_furniture.png) no-repeat;
+    background-position: -28px 22px;
+    margin-bottom: 15px;
+    margin-right: 5px;
 }
 
-.b-nav__item:nth-of-type(6) {
-    background: url(../img/image_sport.png) no-repeat;
+.b-nav__item-sport {
+    background: #95e27a url(../img/image_sport.png) no-repeat;
+    background-position: -15px 42px;
+    margin-bottom: 15px;
+    margin-right: 5px;
 }
 
-.b-nav__item:nth-of-type(7) {
-    background: #c694cb;
+.b-nav__item-home {
+    background: #c694cb url(../img/image_homeanddacha.png) no-repeat;
+    background-position: 28px 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
 }
 
-.b-nav__item:nth-of-type(8) {
-    background: #c694cb;
-}
-/*по другому выровнять картинки не получается*/
-img[src="img/image_electronics.png"] {
-    position: absolute;
-    left: 30px;
-    top: 20px;
+.b-nav__item-auto {
+    background: #8dcdff url(../img/image_auto.png) no-repeat;
+    background-position: 15px 13px;
+    margin-bottom: 15px;
 }
 
-img[src="img/image_homeappliances.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
 
-img[src="img/image_repairanddacha.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
-
-img[src="img/image_children'sgoods.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
-
-img[src="img/image_furniture.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
-
-img[src="img/image_sport.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
-
-img[src="img/image_homeanddacha.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
-
-img[src="img/image_auto.png"] {
-    position: absolute;
-    left: -60px;
-    top: 10px;
-}
-
-.b-nav__figcaption {
+.b-nav__name {
     font-family: MuseoSansCyrl700, sans-serif;
     font-size: 20px;
-    background: #ffffff;
 }
 
 /*brands*/
 
 .b-brands {
-    margin-top: 40px;/**/
+    margin-bottom: 115px;
 }
 
 .b-brands__head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 37px;
 }
 
 .b-brands__title {
     flex: 1 0 auto;
 }
 
-.b-brands__button {
-    font-family: MuseoSansCyrl700, sans-serif;
-    font-size: 13px;
+.b-brands__buttons {
     flex: 0 0 auto;
 }
 
-.b-brands__button::before {
-    
+.b-brands__button {
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 13px;
+    background: none;
+    border: 1px solid #dddddd;
+    padding: 0;
+    margin: 0;
+    padding: 10px 18px;
+    margin-right: 8px;
+    display: inline-block;
 }
 
-.b-brands__button::after {
-    
+.b-brands__button-link {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.b-brands__arrow {
+    display: inline-block;
+    background: none;
+    border-radius: 5%;
+    width: 35px;
+    height: 37px;
+    border:1px solid #dddddd;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+}
+
+.b-brands__arrow-left {
+    background: transparent url(../img/icon_arrow-gray.png) no-repeat;
+    background-size: 45%;
+    background-position: center;
+    transform: scale(-1,1);
+}
+
+.b-brands__arrow-right {
+    background: url(../img/icon_arrow-gray.png) no-repeat;
+    background-size: 45%;
+    background-position: center;
+    margin-left: 5px;/*отталкиваем отраженную кнопку*/
 }
 
 .b-brands__logotypes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 41px;
 }
 
 .b-brands__logotypes-image {
-    
+    margin: 0;
+    padding: 0;
 }
 
 .b-brands__logotypes-link {
-    
+    height: 130px;
+    width: 190px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #f4f4f4;
+    padding-top: 25px;
+}
+
+.b-brands__logotypes-link:nth-of-type(1) .b-brands__logotypes-image {
+    padding-top: 16px;
+    margin-right: 10px;
+}
+
+.b-brands__logotypes-link:nth-of-type(2) .b-brands__logotypes-image {
+    padding-top: 30px;
+}
+
+.b-brands__logotypes-link:nth-of-type(3) .b-brands__logotypes-image {
+    padding-top: 3px;
+}
+
+.b-brands__logotypes-link:nth-of-type(4) .b-brands__logotypes-image {
+    padding-top: 28px;
+}
+
+.b-brands__logotypes-link:nth-of-type(5) .b-brands__logotypes-image {
+    padding-top: 6px;
+}
+
+.b-brands__logotypes-link:nth-of-type(6) .b-brands__logotypes-image {
+    padding-top: 22px;
+    margin-right: -4px;
+}
+
+.b-brands__logotypes-link:hover {
+    border: 1px solid #dddddd;
 }
 
 .b-brands__sale {
+    height: 245px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #f4f4f4;
+    color: #000000;
+    text-decoration: none;
 }
 
 .b-brands__sale-titles {
     font-size: 25px;
+    display: inline-block;
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 32px;
+    margin: 0 auto;
+    width: 27%;
+    position: relative;
+    line-height: 36px;
+    letter-spacing: -0.2px;
 }
 
-.b-brands__sale-titles::before {
-    
+.b-brands__sale-titles::after {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_delonghi.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 151px;
+    left: 63px;
 }
 
 .b-brands__sale-title {
@@ -927,7 +1004,10 @@ img[src="img/image_auto.png"] {
 }
 
 .b-brands__sale-image {
-    
+    display: inline-block;
+    width: 490px;
+    background: url(../img/image_coffeemaker.png) no-repeat center center;
+    flex: 0 0 auto;
 }
 
 /*products*/
@@ -941,12 +1021,31 @@ img[src="img/image_auto.png"] {
 
 .b-panel-products__title {
     flex: 1 0 100%;
+    margin-bottom: 60px;
 }
 
 .b-panel-products__item {
     color: #666666;
     text-decoration: none;
-    flex: 1 0 25%;
+    flex: 1 0 calc(25% - 20px);
+    height: 330px;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.b-panel-products__image-wrapper {
+    margin-bottom: 29px;
+    height: 200px;
+}
+
+.b-panel-products__item-name {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.b-panel-products__item-price {
+    display: block;
 }
 
 /*info-products*/
@@ -957,7 +1056,9 @@ img[src="img/image_auto.png"] {
 
 .b-info-products__title {
     font-family: MuseoSansCyrl300, sans-serif;
+    font-weight: 300;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .b-info-products__title-span {
@@ -967,6 +1068,7 @@ img[src="img/image_auto.png"] {
 .b-info-products__tabs {
     font-family: MuseoSansCyrl500, sans-serif;
     font-size: 15px;
+    text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -975,20 +1077,112 @@ img[src="img/image_auto.png"] {
 .b-info-products__tabs-list {
     padding: 0;
     margin: 0;
+    padding-top: 10px;
     list-style: none;
+    flex: 0 0 auto;
 }
 
 .b-info-products__tabs-item {
-    dis
+    display: inline-block;
+    position: relative;
+    margin-right: 80px;
+}
+
+.b-info-products__tabs-item:last-of-type {
+    margin-right: 0;
+}
+
+.b-info-products__tabs-item:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_recommend.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    top: -3px;
+    left: -25px;
+    filter: contrast(0.1);
+}
+
+.b-info-products__tabs-item:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_choose.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    top: -3px;
+    left: -25px;
+}
+
+.b-info-products__tabs-item:nth-of-type(3)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_movie.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    top: -3px;
+    left: -25px;
+}
+
+.b-info-products__tabs-item:nth-of-type(4)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_review.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    top: -3px;
+    left: -25px;
+}
+
+.b-info-products__tabs-item:nth-of-type(5)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_item.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    top: -3px;
+    left: -25px;
+}
+
+.b-info-products__tabs-link {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.b-info-products__tabs-link:hover {
+    
 }
 
 .b-info-products__tabs-button {
     font-family: MuseoSansCyrl700, sans-serif;
     font-size: 15px;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    background: none;
+    border: 1px solid #dddddd;
+    margin: 0;
+    padding: 5px 10px;
 }
 
 .b-info-products__banners {
-    
+    height: 542px;
+    background: ;
+    background: #000000 url(../img/background_fitnessBrackelet.png) no-repeat center left;
+    position: relative;
+}
+
+.b-info-products__banners::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to right, transparent 20%, #000000 80%);
+    background-position: -420px;
+    background-repeat: no-repeat;
 }
 
 .b-info-products__banners-text {

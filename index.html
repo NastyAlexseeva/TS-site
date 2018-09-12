@@ -38,7 +38,7 @@
                         <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
                     </form>
                     <div class="b-header__account">
-                        <a class="b-header__account-text">
+                        <a href="javascript:void(0)" class="b-header__account-text">
                             <span class="b-header__account-cabinet">Кабинет</span>
                             <span class="b-header__account-enter">Войти</span>
                         </a>
@@ -65,18 +65,18 @@
                 </div>
             </nav>
             <div class="b-banners__slider">
-                <button class="b-banners__arrow-left"><img class="b-banners__arrow-image" src="img/icon_arrow.png" alt="arrow"></button>
-                <button class="b-banners__arrow-right"><img class="b-banners__arrow-image" src="img/icon_arrow.png" alt="arrow"></button>
+                <button class="b-banners__arrow b-banners__arrow-left"></button>
+                <button class="b-banners__arrow b-banners__arrow-right"></button>
                 <div class="b-banners__slider-titles">
                     <img src="img/icon_heart.png" alt="icon" class="b-banners__slider-icon">
                     <h1 class="b-banners__slider-title">Каждый день <span class="b-banners__slider-span">товары со скидкой до 20%</span></h1>
                 </div>
                 <div class="b-banners__slider-points">
-                    <a href="javascript:void(0)" class="b-banners__slider-point"></a>
-                    <a href="javascript:void(0)" class="b-banners__slider-point"></a>
-                    <a href="javascript:void(0)" class="b-banners__slider-point"></a>
-                    <a href="javascript:void(0)" class="b-banners__slider-point"></a>
-                    <a href="javascript:void(0)" class="b-banners__slider-point"></a>
+                    <button class="b-banners__slider-point"></button>
+                    <button class="b-banners__slider-point"></button>
+                    <button class="b-banners__slider-point"></button>
+                    <button class="b-banners__slider-point"></button>
+                    <button class="b-banners__slider-point"></button>
                 </div>
             </div>
         </section>
@@ -163,50 +163,54 @@
             <section class="b-nav">
                 <h2 class="b-nav__title b-title__h2">Вдохновляющий выбор</h2>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-electronics">
                     </div>
                     <span class="b-nav__name">Электроника</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image  b-nav__item-homeappliances">
                     </div>
                     <span class="b-nav__name">Бытовая техника</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-repair">
                     </div>
                     <span class="b-nav__name">Ремонт и дача</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-childrens">
                     </div>
                     <span class="b-nav__name">Детские товары</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-_furniture">
                     </div>
                     <span class="b-nav__name">Мебель</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-sport">
                     </div>
                     <span class="b-nav__name">Спорт и туризм</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-home">
                     </div>
                     <span class="b-nav__name">Дом и дача</span>
                 </a>
                 <a href="javascript:void(0)" class="b-nav__item">
-                    <div class="b-nav__item-image">
+                    <div class="b-nav__item-image b-nav__item-auto">
                     </div>
-                    <span class="b-nav__figcaption">Авто</span>
+                    <span class="b-nav__name">Авто</span>
                 </a>
             </section>
             <section class="b-brands">
                <div class="b-brands__head">
                     <h2 class="b-brands__title b-title__h2">Бренды</h2>
-                    <button class="b-brands__button">Ко всем брендам</button>
+                    <div class="b-brands__buttons">
+                        <button class="b-brands__button"><a class="b-brands__button-link" href="javascript:void(0)">Ко всем брендам</a></button>
+                        <button class="b-brands__arrow b-brands__arrow-left"></button>
+                        <button class="b-brands__arrow b-brands__arrow-right"></button>
+                    </div>
                 </div>
                 <div class="b-brands__logotypes">
                     <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_lg.png" alt="logo"></a>
@@ -216,48 +220,56 @@
                     <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_hp.png" alt="logo"></a>
                     <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_dyson.png" alt="logo"></a>
                 </div>
-                <div class="b-brands__sale">
+                <a href="javascript:void(0)" class="b-brands__sale">
                     <div class="b-brands__sale-titles">
                         <span class="b-brands__sale-title">Получите скидку 20%</span>
                         <span class="b-brands__sale-text">на кофемашины и кофеварки delonghi</span>
                     </div>
-                    <img src="img/image_coffeemaker.png" alt="image" class="b-brands__sale-image">
-                </div>
+                    <div class="b-brands__sale-image"></div>
+                </a>
             </section>
             <section class="b-panel-products">
                 <h2 class="b-panel-products__title b-title__h2">Вас может заинтересовать</h2>
-                <a href="javascript:void(0)" class="b-panel-products__item b-goods">
-                    <img src="img/image_headphonesBeatsSolo.png" alt="image" class="b-goods__image">
-                    <span class="b-goods__name">Проводные наушники Beats Solo 2 White</span>
-                    <span class="b-goods__price">3 990 <mark class="b-goods__ruble">p.</mark></span>
+                <a href="javascript:void(0)" class="b-panel-products__item">
+                    <div class="b-panel-products__image-wrapper">
+                        <img src="img/image_headphonesBeatsSolo.png" alt="image" class="b-goods__image b-panel-products__image">
+                    </div>
+                    <span class="b-goods__name b-panel-products__item-name">Проводные наушники Beats Solo 2 White</span>
+                    <span class="b-goods__price b-panel-products__item-price">3 990 <mark class="b-goods__ruble">p.</mark></span>
                 </a>
-                <a href="javascript:void(0)" class="b-panel-products__item b-goods">
-                    <img src="img/image_case.png" alt="image" class="b-goods__image">
-                    <span class="b-goods__name">Чехол Celluler Line COLORS LIPH647K (21818) Black для iPhone 6</span>
-                    <span class="b-goods__price">2 499 <mark class="b-goods__ruble">p.</mark></span>
+                <a href="javascript:void(0)" class="b-panel-products__item">
+                    <div class="b-panel-products__image-wrapper">
+                        <img src="img/image_case.png" alt="image" class="b-goods__image b-panel-products__image">
+                    </div>
+                    <span class="b-goods__name b-panel-products__item-name">Чехол Celluler Line COLORS LIPH647K (21818) Black для iPhone 6</span>
+                    <span class="b-goods__price b-panel-products__item-price">2 499 <mark class="b-goods__ruble">p.</mark></span>
                 </a>
-                <a href="javascript:void(0)" class="b-panel-products__item b-goods">
-                    <img src="img/image_clockSamsungGearS2.png" alt="image" class="b-goods__image">
-                    <span class="b-goods__name">Смарт-часы Samsung Gear S2 Classic (SM-R7320ZKASER) черный</span>
-                    <span class="b-goods__price">24 990 <mark class="b-goods__ruble">p.</mark></span>
+                <a href="javascript:void(0)" class="b-panel-products__item">
+                    <div class="b-panel-products__image-wrapper">
+                        <img src="img/image_clockSamsungGearS2.png" alt="image" class="b-goods__image b-panel-products__image">
+                    </div>
+                    <span class="b-goods__name b-panel-products__item-name">Смарт-часы Samsung Gear S2 Classic (SM-R7320ZKASER) черный</span>
+                    <span class="b-goods__price b-panel-products__item-price">24 990 <mark class="b-goods__ruble">p.</mark></span>
                 </a>
-                <a href="javascript:void(0)" class="b-panel-products__item b-goods">
-                    <img src="img/image_typefaceHarman.png" alt="image" class="b-goods__image">
-                    <span class="b-goods__name">Гарнитура Harman Kardon SOHO BT бел.</span>
-                    <span class="b-goods__price">15 990 <mark class="b-goods__ruble">p.</mark></span>
+                <a href="javascript:void(0)" class="b-panel-products__item">
+                    <div class="b-panel-products__image-wrapper">
+                        <img src="img/image_typefaceHarman.png" alt="image" class="b-goods__image b-panel-products__image">
+                    </div>
+                    <span class="b-goods__name b-panel-products__item-name">Гарнитура Harman Kardon SOHO BT бел.</span>
+                    <span class="b-goods__price b-panel-products__item-price">15 990 <mark class="b-goods__ruble">p.</mark></span>
                 </a>
             </section>
         </div>
         <section class="b-info-products">
             <div class="b-container">
-                <h2 class="b-info-products__title">Знание-<span class="b-info-products__title-span">Сила</span></h2>
+                <h2 class="b-info-products__title">Знание &mdash; <span class="b-info-products__title-span">Сила</span></h2>
                 <div class="b-info-products__tabs">
                     <ul class="b-info-products__tabs-list">
-                        <li class="b-info-products__tabs-item">Рекомендуем</li>
-                        <li class="b-info-products__tabs-item">Как выбрать</li>
-                        <li class="b-info-products__tabs-item">Видео</li>
-                        <li class="b-info-products__tabs-item">Обзоры новинок</li>
-                        <li class="b-info-products__tabs-item">Списки покупок</li>
+                        <li class="b-info-products__tabs-item"><a href="javascript:void(0)" class="b-info-products__tabs-link">Рекомендуем</a></li>
+                        <li class="b-info-products__tabs-item"><a href="javascript:void(0)" class="b-info-products__tabs-link">Как выбрать</a></li>
+                        <li class="b-info-products__tabs-item"><a href="javascript:void(0)" class="b-info-products__tabs-link">Видео</a></li>
+                        <li class="b-info-products__tabs-item"><a href="javascript:void(0)" class="b-info-products__tabs-link">Обзоры новинок</a></li>
+                        <li class="b-info-products__tabs-item"><a href="javascript:void(0)" class="b-info-products__tabs-link">Списки покупок</a></li>
                     </ul>
                     <button class="b-info-products__tabs-button">Перейти в раздел</button>
                 </div>
