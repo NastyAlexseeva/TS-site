@@ -12,12 +12,12 @@
 </head>
 <body class="b-body">
     <header class="b-header">
-            <div class="b-container">
-                <div class="b-header__top-head">
+        <div class="b-header__wrapper-border">
+            <div class="b-header__top-head b-container">
                     <div class="b-header__sity-search">
                         <span class="b-header__sity">Город:</span>
-                        <a href="javascript:void(0)" class="b-header__sity-name">Набережные челны</a>
-                     </div>
+                        <a href="javascript:void(0)" class="b-header__sity-name" title="Сменить город">Набережные челны</a>
+                    </div>
                     <nav class="b-header__nav">
                         <ul class="b-header__list">
                             <li class="b-header__item"><a href="javascript:void(0)" class="b-header__item-link">Магазины</a></li>
@@ -29,46 +29,44 @@
                     </nav>
                     <a href="tel:88007752100" class="b-header__tel">8 800 775 21 00</a>
                 </div>
-            </div>
-        <div class="b-header__bottom-wrapper"><!--Для линии под верхним блоком-->
-            <div class="b-container">
-                <div class="b-header__bottom-head">
-                    <a href="javascript:void(0)" class="b-header__logo"><img src="img/logo.png" alt="logo" class="b-header__logo-image"></a>
-                    <form action="javascript:void(0)" method="post" class="b-header__form">
-                        <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
-                    </form>
-                    <div class="b-header__account">
-                        <a href="javascript:void(0)" class="b-header__account-text">
-                            <span class="b-header__account-cabinet">Кабинет</span>
-                            <span class="b-header__account-enter">Войти</span>
-                        </a>
-                        <a href="javascript:void(0)" class="b-header__backet"><img src="img/icon_basket.png" alt="basket" class="b-header__backet-image"></a>
-                    </div>
+        </div>
+        <div class="b-container">
+            <div class="b-header__bottom-head">
+                <a href="javascript:void(0)" class="b-header__logo-link"><img src="img/logo.png" alt="Техносила" title="техносила" class="b-header__logo-image"></a>
+                <form action="javascript:void(0)" method="post" class="b-header__form">
+                    <input type="search" class="b-header__search" placeholder="Поиск среди 100 00 товаров">
+                    <button class="b-header__search-icon" title="Поиск"></button>
+                </form>
+                <div class="b-header__account">
+                    <a href="javascript:void(0)" class="b-header__account-text" title="Войти в кабинет">
+                        <span class="b-header__account-cabinet">Кабинет</span>
+                        <span class="b-header__account-enter">Войти</span>
+                     </a>
+                    <a href="javascript:void(0)" class="b-header__backet-link"><img src="img/icon_basket.png" alt="Корзина" title="Корзина" class="b-header__backet-image"></a>
                 </div>
             </div>
         </div>
-        </header>
+    </header>
+    <!---->
     <main class="b-main">
         <section class="b-banners">
-            <nav class="b-banners__nav">
-                <div class="b-container">
-                    <ul class="b-banners__list">
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Электроника</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Бытовая техника</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Ремонт и дача</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Детские товары</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Мебель</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Спорт и туризм</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Дом и дача</a></li>
-                        <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Авто</a></li>
-                    </ul>
-                </div>
+            <nav class="b-banners__nav b-container">
+                <ul class="b-banners__list">
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Электроника</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Бытовая техника</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Ремонт и дача</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Детские товары</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Мебель</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Спорт и туризм</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Дом и дача</a></li>
+                    <li class="b-banners__item"><a href="javascript:void(0)" class="b-banners__item-link">Авто</a></li>
+                </ul>
             </nav>
             <div class="b-banners__slider">
                 <button class="b-banners__arrow b-banners__arrow-left"></button>
                 <button class="b-banners__arrow b-banners__arrow-right"></button>
                 <div class="b-banners__slider-titles">
-                    <img src="img/icon_heart.png" alt="icon" class="b-banners__slider-icon">
+                    <img src="img/icon_heart.png" alt="сердце" class="b-banners__slider-icon">
                     <h1 class="b-banners__slider-title">Каждый день <span class="b-banners__slider-span">товары со скидкой до 20%</span></h1>
                 </div>
                 <div class="b-banners__slider-points">
@@ -85,41 +83,41 @@
                 <div class="b-news__panel">
                     <h2 class="b-news__title b-title__h2">Лучшее и интересное</h2>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/icon_map.png" alt="image" class="b-news__panel-image">
+                        <img src="img/icon_map.png" alt="Бонус" class="b-news__panel-image">
                         <div class="b-news__panel-text">
                             <span class="b-news__panel-title b-news__title-other">Бонус <mark class="b-news__title-mark">скидка 5%</mark></span>
                             <span class="b-news__panel-description">Дополнительная скидка 5% при онлайн-покупке</span>
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_iphonese.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_iphonese.png" alt="IphoneSE" class="b-news__panel-image">
                         <div class="b-news__panel-text">
                             <span class="b-news__panel-title">Iphone SE</span>
                             <span class="b-news__panel-description">Малая форма в своей лучшей форме.</span>
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_coffeemachine.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_coffeemachine.png" alt="Кофемашина" class="b-news__panel-image">
                         <div class="b-news__panel-text">
                             <span class="b-news__panel-title">Как угодить кофеману</span>
                             <span class="b-news__panel-description">Поможем выбрать подарок</span>
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_fan.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_fan.png" alt="Вентилятор" class="b-news__panel-image">
                         <div class="b-news__panel-description">
                             <span class="b-news__panel-title">В игру вступают вентиляторы</span>
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_grill.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_grill.png" alt="Гриль" class="b-news__panel-image">
                         <div class="b-news__panel-text">
                             <span class="b-news__panel-title">Идеальный стейк автоматически</span>
                             <span class="b-news__panel-description">Умный гриль от BORK подскажет нужную степень прожарки.</span>
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_childseat.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_childseat.png" alt="Автокресло" class="b-news__panel-image">
                         <div class="b-news__panel-description">
                             <div class="b-news__panel-text">
                                 <span class="b-news__panel-title">Ищем идеальное детское автокресло</span>
@@ -127,14 +125,14 @@
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_clock.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_clock.png" alt="Samsung Gear S2" class="b-news__panel-image">
                         <div class="b-news__panel-text">
                             <span class="b-news__panel-title">Samsung Gear S2</span>
                             <span class="b-news__panel-description">Набор важнейших функций всегда под рукой</span>
                         </div>
                     </a>
                     <a href="javascript:void(0)" class="b-news__panel-item">
-                        <img src="img/image_sale.png" alt="image" class="b-news__panel-image">
+                        <img src="img/image_sale.png" alt="Скидка" class="b-news__panel-image">
                         <div class="b-news__panel-text">
                             <span class="b-news__panel-title">На радость малышам!</span>
                             <span class="b-news__panel-description">Скидка до 50% на игрушки 24-26 мая</span>
@@ -143,61 +141,61 @@
                 </div>
                 <div class="b-news__conditions">
                     <figure class="b-news__conditions-item">
-                        <img src="img/icon_delivery.png" alt="icon" class="b-news__condition-image">
+                        <img src="img/icon_delivery.png" alt="Доставка" class="b-news__condition-image">
                         <figcaption class="b-news__condition-figcaption">Бесплатная доставка от 5 000 р.</figcaption>
                     </figure>
                     <figure class="b-news__conditions-item">
-                        <img src="img/icon_price.png" alt="icon" class="b-news__condition-image">
+                        <img src="img/icon_price.png" alt="Цена" class="b-news__condition-image">
                         <figcaption class="b-news__condition-figcaption">Гарантия честной цены</figcaption>
                     </figure>
                     <figure class="b-news__conditions-item">
-                        <img src="img/icon_return.png" alt="icon" class="b-news__condition-image">
+                        <img src="img/icon_return.png" alt="Возврат" class="b-news__condition-image">
                         <figcaption class="b-news__condition-figcaption">Возврат в течении 60 дней</figcaption>
                     </figure>
                     <figure class="b-news__conditions-item">
-                        <img src="img/icon_payment.png" alt="icon" class="b-news__condition-image">
+                        <img src="img/icon_payment.png" alt="Покупка" class="b-news__condition-image">
                         <figcaption class="b-news__condition-figcaption">Покупайте сейчас, платите позже</figcaption>
                     </figure>
                 </div>
             </section>
             <section class="b-nav">
                 <h2 class="b-nav__title b-title__h2">Вдохновляющий выбор</h2>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Электроника">
                     <div class="b-nav__item-image b-nav__item-electronics">
                     </div>
                     <span class="b-nav__name">Электроника</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Бытовая техника">
                     <div class="b-nav__item-image  b-nav__item-homeappliances">
                     </div>
                     <span class="b-nav__name">Бытовая техника</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Ремонт и дача">
                     <div class="b-nav__item-image b-nav__item-repair">
                     </div>
                     <span class="b-nav__name">Ремонт и дача</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Детские товары">
                     <div class="b-nav__item-image b-nav__item-childrens">
                     </div>
                     <span class="b-nav__name">Детские товары</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Мебель">
                     <div class="b-nav__item-image b-nav__item-_furniture">
                     </div>
                     <span class="b-nav__name">Мебель</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Спорт и туризм">
                     <div class="b-nav__item-image b-nav__item-sport">
                     </div>
                     <span class="b-nav__name">Спорт и туризм</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Дом и дача">
                     <div class="b-nav__item-image b-nav__item-home">
                     </div>
                     <span class="b-nav__name">Дом и дача</span>
                 </a>
-                <a href="javascript:void(0)" class="b-nav__item">
+                <a href="javascript:void(0)" class="b-nav__item" title="Авто">
                     <div class="b-nav__item-image b-nav__item-auto">
                     </div>
                     <span class="b-nav__name">Авто</span>
@@ -213,12 +211,12 @@
                     </div>
                 </div>
                 <div class="b-brands__logotypes">
-                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_lg.png" alt="logo"></a>
-                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_samsung.png" alt="logo"></a>
-                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_apple.png" alt="logo"></a>
-                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_canon.png" alt="logo"></a>
-                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_hp.png" alt="logo"></a>
-                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_dyson.png" alt="logo"></a>
+                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_lg.png" alt="LG" title="LG"></a>
+                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_samsung.png" alt="Samsung" title="Samsung"></a>
+                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_apple.png" alt="Apple" title="Apple"></a>
+                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_canon.png" alt="Canon" title="Canon"></a>
+                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_hp.png" alt="HP" title="HP"></a>
+                    <a href="javascript:void(0)"  class="b-brands__logotypes-link"><img class="b-brands__logotypes-image" src="img/icon_dyson.png" alt="Dyson" title="Dyson"></a>
                 </div>
                 <a href="javascript:void(0)" class="b-brands__sale">
                     <div class="b-brands__sale-titles">
@@ -300,7 +298,7 @@
                                 <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                 <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                 <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
-                                <label for="goods-rating">(3)</label>
+                                <span class="b-goods__rating-label">(3)</span>
                             </form>
                         </a>
                         <a href="javascript:void(0)" class="b-info-products__article-goods b-goods">
@@ -318,7 +316,7 @@
                                  <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                  <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                  <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
-                                <label for="goods-rating">(3)</label>
+                                <span class="b-goods__rating-label b-label">(3)</span>
                             </form>
                         </a>
                     </div>
@@ -348,7 +346,7 @@
                                 <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                 <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                 <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
-                                <label for="goods-rating">(3)</label>
+                                <span class="b-goods__rating-label b-label">(3)</span>
                             </form>
                         </a>
                         <a href="javascript:void(0)" class="b-info-products__article-goods b-goods">
@@ -365,54 +363,56 @@
                                  <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                  <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
                                  <div class="b-goods__rating-star"><input type="checkbox" class="b-goods__rating" id="goods-rating" name="rating"></div>
-                                <label for="goods-rating">(3)</label>
+                                <span class="b-goods__rating-label b-label">(3)</span>
                             </form>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="b-recent">
-            <h2 class="b-recent__title b-title__h2">Вы недавно просматривали</h2>
-            <a href="javascript:void(0)" class="b-recent__goods">
-                <img src="img/image_tvLG55U.png" alt="image" class="b-recent__goods-image">
-                <div class="b-recent__goods-text">
-                    <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
-                    <span class="b-recent__goods-price b-goods__price">76 190 <mark class="b-recent__goods-ruble b-goods__ruble">p.</mark></span>
-                </div>
-            </a>
-            <a href="javascript:void(0)" class="b-recent__goods">
-                <img src="img/image_tvSamsungUE-48.png" alt="image" class="b-recent__goods-image">
-                <div class="b-recent__goods-text">
-                    <span class="b-recent__goods-name b-goods__name">Samsung UE-48-JU6610U Smart UHD LED</span>
-                    <span class=" b-recent__goods-price b-goods__price">53 190 <mark class="b-recent__goods-ruble b-goods__ruble">p.</mark></span>
-                </div>
-            </a>
-            <a href="javascript:void(0)" class="b-recent__goods">
-                <img src="img/image_tvLG55UF6.png" alt="image" class="b-recent__goods-image">
-                <div class="b-recent__goods-text">
-                    <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
-                    <span class=" b-recent__goods-price b-goods__price b-goods__price--sale">101 190 <mark class="b-recent__goods-ruble b-goods__ruble b-goods__price--sale">p.</mark></span>
-                </div>
-            </a>
-            <a href="javascript:void(0)" class="b-recent__goods">
-                <img src="img/image_tvLGUF67.png" alt="image" class="b-recent__goods-image">
-                <div class="b-recent__goods-text">
-                    <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
-                    <span class=" b-recent__goods-price b-goods__price b-goods__price--sale">83 190 <mark class="b-recent__goods-ruble b-goods__ruble b-goods__price--sale">p.</mark></span>
-                </div>
-            </a>
-        </section>
-        <section class="b-feedback">
-            <h2 class="b-feedback__title b-title__h2">Оставайтесь на связи</h2>
-            <span class="b-feedback__text">Узнавайте о выгодных предложениях и получайте персональные рекомендации</span>
-            <form action="javascript:void(0)" method="post" class="b-feedback__forms">
-                <input type="email" class="b-feedback__email" id="feedback-email" name="email">
-                <label for="feedback-email">
-                    <input type="submit" class="b-feedback__button" value="подписаться">
-                </label>
-            </form>
-        </section>
+        <div class="b-container">
+            <section class="b-recent">
+                <h2 class="b-recent__title b-title__h2">Вы недавно просматривали</h2>
+                <a href="javascript:void(0)" class="b-recent__goods">
+                    <img src="img/image_tvLG55U.png" alt="image" class="b-recent__goods-image">
+                    <div class="b-recent__goods-text">
+                        <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
+                        <span class="b-recent__goods-price b-goods__price">76 190 <mark class="b-recent__goods-ruble b-goods__ruble">p.</mark></span>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="b-recent__goods">
+                    <img src="img/image_tvSamsungUE-48.png" alt="image" class="b-recent__goods-image">
+                    <div class="b-recent__goods-text">
+                        <span class="b-recent__goods-name b-goods__name">Samsung UE-48-JU6610U Smart UHD LED</span>
+                        <span class=" b-recent__goods-price b-goods__price">53 190 <mark class="b-recent__goods-ruble b-goods__ruble">p.</mark></span>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="b-recent__goods">
+                    <img src="img/image_tvLG55UF6.png" alt="image" class="b-recent__goods-image">
+                    <div class="b-recent__goods-text">
+                        <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
+                        <span class=" b-recent__goods-price b-goods__price b-goods__price--sale">101 190 <mark class="b-recent__goods-ruble b-goods__ruble b-goods__price--sale">p.</mark></span>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="b-recent__goods">
+                    <img src="img/image_tvLGUF67.png" alt="image" class="b-recent__goods-image">
+                    <div class="b-recent__goods-text">
+                        <span class="b-recent__goods-name b-goods__name">LG 55UF670V</span>
+                        <span class=" b-recent__goods-price b-goods__price b-goods__price--sale">83 190 <mark class="b-recent__goods-ruble b-goods__ruble b-goods__price--sale">p.</mark></span>
+                    </div>
+                </a>
+            </section>
+            <section class="b-feedback">
+                <h2 class="b-feedback__title b-title__h2">Оставайтесь на связи</h2>
+                <span class="b-feedback__text">Узнавайте о выгодных предложениях и получайте персональные рекомендации</span>
+                <form action="javascript:void(0)" method="post" class="b-feedback__forms">
+                    <input type="email" class="b-feedback__email" id="feedback-email" name="email">
+                    <label for="feedback-email">
+                        <input type="submit" class="b-feedback__button" value="подписаться">
+                    </label>
+                </form>
+            </section>
+        </div>
     </main>
     <footer class="b-footer">
         <div class="b-footer__content">
