@@ -59,6 +59,16 @@
 .b-button__accent {
     border: none;
     background: #ffdc00;
+    font-size: 15px;
+    padding-left: 21px;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+
+.b-button__accent:hover {
+    border: 1px solid #bfbfbf;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .b-arrow {
@@ -67,6 +77,7 @@
     width: 35px;
     height: 35px;
     border: none;
+    background: none;
 }
 
 
@@ -116,7 +127,7 @@
     padding: 3px 7px;
     width: fit-content;
     position: absolute;
-    top: 15px;
+    top: 19px;
     left: 20px;
 }
 
@@ -126,10 +137,10 @@
     color: #ffffff;
     background: #eb2e2c;
     text-transform: uppercase;
-    padding: 3px 15px 3px 7px;
+    padding: 3px 18px 3px 7px;
     width: fit-content;
     position: absolute;
-    top: 35px;
+    top: 39px;
     left: 20px;
 }
 
@@ -139,7 +150,7 @@
     height: 5px;
     width: 5px;
     top: 5px;
-    right: 5px;
+    right: 7px;
     border-top: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
     border-radius: 1px;
@@ -193,14 +204,14 @@
 
 .b-header__wrapper {
     border-bottom: 1px solid #eeeeee;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 19px auto;
 }
 
 .b-header__top-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .b-header__sity-search {
@@ -275,7 +286,7 @@
     text-decoration: none;
     text-align: right;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.35px;
     line-height: 16px;
     flex: 0 0 auto;
 }
@@ -297,12 +308,13 @@
     margin: 0;
     padding: 0;
     flex: 0 0 auto;
-    margin-right: 0px;
+    margin-right: 31px;
 }
 
 .b-header__logo-image {
     width: 100%;
     height: auto;
+    padding-left: 1px;/*pixel perfect*/
 }
 
 .b-header__form {
@@ -312,7 +324,6 @@
     padding: 0;
     padding-top: 2px;/*pixel perfect*/
     flex: 0 0 1;
-    margin-right: 0px;
 }
 
 .b-header__search-icon {
@@ -364,7 +375,7 @@
     font-size: 13px;
     flex: 0 0 auto;
     position: relative;
-    margin-right: 60px;
+    margin-right: 56px;
 }
 
 .b-header__account-text {
@@ -432,7 +443,7 @@
 
 .b-banners {
     background: #ffdc00 url(../img/background_header.png) no-repeat bottom left;
-    background-size: contain;
+    background-size: auto;
     margin: 0 auto 54px auto;
     position: relative;
 }
@@ -485,7 +496,7 @@
 
 .b-banners__arrow-left {
     top: 46%;
-    left: 43px;
+    left: 44px;
     background: rgba(0, 0, 0, 0.1) url(../img/icon_arrow-white.png) no-repeat;
     background-size: 40%;
     background-position: center;
@@ -501,7 +512,7 @@
 
 .b-banners__arrow-right {
     top: 45.6%;
-    right: 45px;
+    right: 46px;
     background: rgba(0, 0, 0, 0.1) url(../img/icon_arrow-white.png) no-repeat;
     background-size: 40%;
     background-position: center;
@@ -581,7 +592,7 @@
 /*news*/
 
 .b-news {
-    margin-bottom: 92px;
+    margin-bottom: 51px;
 }
 
 .b-news__title {
@@ -593,7 +604,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
 }
 
 .b-news__panel-item {
@@ -863,9 +874,8 @@
 .b-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 121px;
+    margin-bottom: 60px;
 }
 
 .b-nav__title {
@@ -961,14 +971,11 @@
 
 /*brands*/
 
-.b-brands {
-    
-}
-
 .b-brands__wrapper {
     border-bottom: 1px solid #eeeeee;
     border-top: 1px solid #eeeeee;
-    padding: 40px 0 40px 0;
+    padding: 60px 0;
+    margin-bottom: 54px;
 }
 
 .b-brands__head {
@@ -987,15 +994,9 @@
 }
 
 .b-brands__button {
-    font-family: MuseoSansCyrl700, sans-serif;
-    font-size: 13px;
-    background: none;
-    border: 1px solid #dddddd;
-    padding: 0;
-    margin: 0;
-    padding: 10px 18px;
     margin-right: 8px;
     display: inline-block;
+    line-height: 15px;
 }
 
 .b-brands__button:hover {
@@ -1010,19 +1011,12 @@
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
 }
 
 .b-brands__arrow {
     display: inline-block;
-    background: none;
-    border-radius: 5%;
-    width: 35px;
-    height: 37px;
-    border:1px solid #dddddd;
-    padding: 0;
-    margin: 0;
     vertical-align: bottom;
+    border: 1px solid #dddddd;
 }
 
 .b-brands__arrow:hover {
@@ -1095,6 +1089,7 @@
 
 .b-brands__logotypes-link:hover {
     border: 1px solid #dddddd;
+    transition: 0.3s;
 }
 
 .b-brands__sale {
@@ -1150,30 +1145,65 @@
 /*products*/
 
 .b-panel-products {
+    margin-bottom: 62px;
+}
+
+.b-panel-products__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.b-panel-products__buttons {
+    flex: 0 0 10%;
+    text-align: right;
+}
+
+.b-panel-products__arrow {
+    display: inline-block;
+    border: 1px solid #dddddd;
+}
+
+.b-panel-products__arrow:hover {
+    border: 1px solid #bfbfbf;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.b-panel-products__arrow-left {
+    background: transparent url(../img/icon_arrow-gray.png) no-repeat;
+    background-size: 45%;
+    background-position: center;
+    transform: scale(-1,1);
+}
+
+.b-panel-products__arrow-right {
+    background: transparent url(../img/icon_arrow-gray.png) no-repeat;
+    background-size: 45%;
+    background-position: center;
+    margin-left: 6px;/*от другой кнопки не отталкивается из за scale*/
+}
+
+.b-panel-products__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-}
-
-.b-panel-products__title {
-    flex: 0 0 100%;
-    margin-bottom: 60px;
 }
 
 .b-panel-products__item {
     color: #666666;
     text-decoration: none;
-    flex: 0 0 calc(25% - 20px);
-    padding: 0;
+    flex: 0 0 calc(25% - 40px);
+    padding: 20px;
     margin: 0;
-    padding-left: 20px;
+    height: 320px;
+    position: relative;
 }
 
 .b-panel-products__item:hover {
     border: 1px solid #dddddd;
-    flex: 1 0 calc(25% - 22px);
+    flex: 1 0 calc(25% - 40px);
     /*не знаю, как исправить смещение при наведении*/
 }
 
@@ -1184,11 +1214,15 @@
 
 .b-panel-products__item-name {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    max-height: 60px;
+    overflow: hidden;
 }
 
 .b-panel-products__item-price {
-    display: block;
+    position: absolute;
+    bottom: 11px;
+    left: 20px;
 }
 
 /*info-products*/
@@ -1196,7 +1230,8 @@
 .b-info-products {
     border-bottom: 1px solid #eeeeee;
     border-top: 1px solid #eeeeee;
-    padding: 40px 0;
+    padding: 53px 0 0 0;
+    margin-bottom: 36px;
 }
 
 .b-info-products__title {
@@ -1227,7 +1262,7 @@
     justify-content: space-between;
     padding-left: 30px;
     letter-spacing: -0.05px;
-    margin-bottom: 31px;
+    margin-bottom: 22px;
 }
 
 .b-info-products__tabs-list {
@@ -1247,6 +1282,10 @@
     margin-right: 0;
 }
 
+.b-info-products__tabs-item:first-of-type {
+    font-weight: 700;
+}
+
 .b-info-products__tabs-item:nth-of-type(1)::before {
     content: "";
     position: absolute;
@@ -1256,7 +1295,17 @@
     height: 110%;
     top: -4px;
     left: -27px;
-    filter: contrast(0.1);
+    filter: contrast(100%);
+}
+
+.b-info-products__tabs-item:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #ffdc00;
+    height: 4px;
+    width: 163px;
+    bottom: -34px;
+    left: -30px;
 }
 
 .b-info-products__tabs-item:nth-of-type(2)::before {
@@ -1310,7 +1359,7 @@
 }
 
 .b-info-products__tabs-item:hover {
-   filter: brightness(120%);
+    color: #dddddd;
     cursor: pointer;
     font-weight: 700;
 }
@@ -1320,12 +1369,12 @@
     font-size: 15px;
     text-transform: uppercase;
     flex: 0 0 auto;
-    background: none;
-    border: 1px solid #dddddd;
-    margin: 0;
-    padding: 12px 20px 10px 19px;
     vertical-align: top;
-    line-height: 10px;
+}
+
+.b-info-products__tabs-button:hover {
+    border: 1px solid #bfbfbf;
+    transition: 0.3s;
 }
 
 .b-info-products__button-link {
@@ -1337,9 +1386,10 @@
 
 .b-info-products__banners {
     background: #000000 url(../img/background_fitnessBrackelet.png) no-repeat center left;
-    padding: 39px 46px 43px 45px;
-    margin: 0 auto 50px auto;
+    padding: 39px 46px 47px 45px;
+    margin: 0 auto;
     max-width: calc(1280px - 90px);
+    height: 458px;/*pixel perfect*/
 }
 
 .b-info-products__article {
@@ -1350,14 +1400,14 @@
 
 .b-info-products__article-bottom {
     background: rgb(250,250,250);
-    padding: 39px 0px 43px 45px;
+    padding: 43px 45px 43px 45px;
 }
 
 .b-info-products__article-text {
     flex: 0 0 1;
     max-width: 450px;
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 22px;
 }
 
 .b-title__h3 {
@@ -1365,7 +1415,7 @@
     font-size: 35px;
     padding: 0;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
 }
 
 .b-info-products__banners-title {
@@ -1377,18 +1427,21 @@
     margin-bottom: 24px;
 }
 
-
 .b-text {
     font-family: MuseoSansCyrl500, sans-serif;
     font-size: 15px;
     margin: 0;
     padding: 0;
     line-height: 21px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
 }
 
 .b-info-products__banners-p {
     color: #ffffff;
+}
+
+.b-info-products__article-button {
+    margin-right: 7px;
 }
 
 .b-question-choice {
@@ -1399,7 +1452,7 @@
     padding-left: 25px;
     text-decoration: none;
     color: #5e5e5e;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .b-question-choice::before {
@@ -1415,18 +1468,6 @@
 }
 
 
-.b-read-more {
-    font-family: MuseoSansCyrl700, sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    background: #ffdc00;
-    border: 0;
-    color: #000000;
-    margin: 0;
-    padding: 14px 20px 10px 19px;
-    margin-right: 6px;
-}
-
 .b-all-goods {
     font-family: MuseoSansCyrl700, sans-serif;
     font-size: 15px;
@@ -1439,20 +1480,24 @@
     background: none;
 }
 
+.b-all-goods:hover {
+    border: 1px solid #bfbfbf;
+    transition: 0.3px;
+}
 /*карточки товаров, так же в .article*/
-
 
 .b-info-products__goods-wrapper {
     flex: 0 0 1;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 }
 
 .b-info-products__article-goods {
     background: #ffffff;
     text-decoration: none;
-    padding: 70px 20px 20px 20px;
+    padding: 74px 20px 20px 20px;
     max-width: 250px;
+    height: 371px;/*pixel perfect*/
 }
 
 .b-info-products__article-goods:first-child {
@@ -1475,16 +1520,16 @@
 }
 
 .b-info-products__goods-name {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 .b-info-products__goods-price {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .b-info-products__goods-delivery {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-family: MuseoSansCyrl300, sans-serif;
     font-size: 14px;
     color: #000000;
@@ -1500,6 +1545,7 @@
     width: 12px;
     height: auto;
     background-size: contain;
+    /*margin-bottom: 3px;/*pixel perfect*/
 }
 
 /*клик по рейтингу, выбор звезд и тп*/
@@ -1543,53 +1589,91 @@
 /*recent*/
 
 .b-recent {
-    margin-bottom: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 53px;
 }
 
 .b-recent__title {
-    flex: 0 0 100%;
-    margin-bottom: 66px;
+    flex: 0 0 50%;
+    margin-bottom: 34px;
+}
+
+.b-recent__buttons {
+    flex: 0 0 50%;
+    text-align: right;
+}
+
+.b-recent__arrow {
+    border: 1px solid #dddddd;
+    margin: 11px 0 0 0;/*по другому не отталкивается*/
+}
+
+.b-recent__arrow-left {
+    background: transparent url(../img/icon_arrow-gray.png) no-repeat;
+    background-size: 45%;
+    background-position: center;
+    transform: scale(-1,1);
+}
+
+.b-recent__arrow-right {
+    background: url(../img/icon_arrow-gray.png) no-repeat;
+    background-size: 45%;
+    background-position: center;
+    margin-left: 5px;/*отталкиваем отраженную кнопку*/
+}
+
+.b-recent__arrow:hover {
+    border: 1px solid #bfbfbf;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .b-recent__goods {
+    flex: 0 0 calc(25% - 10px);
+    text-decoration: none;
+    border: 1px solid #f4f4f4;
+    padding: 20px 20px 30px 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: s;
+    justify-content: flex-start;
     align-items: flex-end;
-    flex: 0 0 25%;
-    text-decoration: none;
+    height: 120px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.b-recent__goods:hover {
+    border: 1px solid #dddddd;
+    transition: 0.3s;
+}
+
+.b-recent__goods:last-child {
+    margin-right: 0;
 }
 
 .b-recent__goods-image {
     margin-right: 20px;
-    height: 60px;
+    height: 55px;
     width: auto;
 }
 
-.b-recent__goods-text {
-    
-}
-
 .b-recent__goods-name {
-    
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 15px;
 }
 
 .b-recent__goods-price {
     font-size: 20px;
 }
 
-.b-recent__goods-ruble {
-    
-}
-
 /*feedback*/
 
 .b-feedback {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1598,87 +1682,225 @@
 
 .b-feedback__title {
     flex: 0 0 100%;
+    margin-bottom: 24px;
 }
 
 .b-feedback__text {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
+    font-family: MuseoSansCyrl500, sans-serif;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.2px;
 }
 
 .b-feedback__forms {
-    flex: 0 0 50%;
+    flex: 0 0 60%;
     text-align: right;
 }
 
 .b-feedback__email {
-    
+    height: 40px;
+    border: 1px solid #dddddd;
+    width: 391px;
+    padding: 6px 10px 10px 13px;
+    margin: 0;
+    margin-right: 5px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-family: MuseoSansCyrl500, sans-serif;
+    color: #666666;
+    letter-spacing: 1px;
+}
+
+.b-feedback__email:focus,
+.b-feedback__email:active,
+.b-feedback__email:hover {
+    outline: none;
 }
 
 .b-feedback__button {
-    
+    width: 191px;
+    line-height: 15px;
 }
 
 /*footer*/
 
 .b-footer {
-    
+    background: #ffdc00; 
+    padding: 38px 45px 40px 45px;
 }
 
 .b-footer__content {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #bfbfbf;/**/
+    padding: 0 0 36px 0;
+    margin-bottom: 20px;
 }
 
 .b-footer__content-info {
-    
+    flex: 0 0 25%;
+    max-width: 250px;
+    margin-right: 50px;
+}
+
+.b-footer__content-info:last-child {
+    margin-right: 0;
 }
 
 .b-footer__content-list {
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .b-footer__content-title {
-    
+    margin-bottom: 10px;
+    font-family: MuseoSansCyrl700, sans-serif;
+    font-size: 18px;
 }
 
 .b-footer__content-item {
-    
+    text-decoration: none;
+    color: #000000;
+    line-height: 22px;
+}
+
+.b-footer__content-telephons {
+     padding-top: 16px;
+     margin-bottom: 13px;
+     line-height: 20px;
 }
 
 .b-footer__content-tel {
-    
+    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .b-footer__content-num {
-    
-}
-
-.b-footer__content-text {
-    
+    font-family: MuseoSansCyrl700, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 0.6px;
 }
 
 .b-footer__content-links {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .b-footer__content-link {
-    
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #ccc8bd;
+    position: relative;
+    margin-right: 13px;
+}
+
+.b-footer__content-link:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_vk.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.b-footer__content-link:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.b-footer__content-link:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_facebook.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.b-footer__content-link:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_classmates.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.b-footer__content-link:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_instagram.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.b-footer__content-link:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_tw.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.b-footer__content-link:nth-child(5) {
+    margin: 0;
+}
+
+.b-footer__content-link:nth-child(6)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_youtub.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.b-footer__content-link:nth-child(7)::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_google+.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
 }
 
 .b-footer__copyright {
-    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .b-footer__copyright-info {
-    
+    font-family: MuseoSansCyrl500, sans-serif;
+    text-decoration: none;
+    color: #666666;
+    letter-spacing: -0.5px;
+    font-size: 14px;
 }
 
 .b-footer__copyright-design {
-    
-}
-
-.b-footer__copyright-image {
-    
+    text-decoration: none;
+    flex: 0 0 24.4%;
 }
 
 .b-footer__copyright-text {
-    
+    font-family: MuseoSansCyrl500, sans-serif;
+    text-decoration: none;
+    color: #666666;
+    font-size: 13px;
+}
+
+.b-footer__copyright-image {
+    margin-right: 9px;
+}
+
+.b-footer__copyright-accent {
+    text-decoration: underline;
+    background: none;
+    color: #666666;
 }
