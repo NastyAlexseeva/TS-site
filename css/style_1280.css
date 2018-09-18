@@ -1688,7 +1688,7 @@
 .b-feedback__text {
     flex: 0 0 40%;
     font-family: MuseoSansCyrl500, sans-serif;
-    color: #666666;
+    color: #000000;
     padding: 0;
     margin: 0;
     letter-spacing: -0.2px;
@@ -1727,7 +1727,7 @@
 /*footer*/
 
 .b-footer {
-    background: #ffdc00; 
+    background: #efede7; 
     padding: 38px 45px 40px 45px;
 }
 
@@ -1765,7 +1765,7 @@
 
 .b-footer__content-item {
     text-decoration: none;
-    color: #000000;
+    color: #666666;
     line-height: 22px;
 }
 
