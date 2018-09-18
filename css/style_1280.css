@@ -671,7 +671,6 @@
 }
 
 .b-news__panel-item:nth-of-type(3) .b-news__panel-image {
-    padding-left: 86px;
     margin-bottom: -15px;
 }
 
@@ -685,7 +684,7 @@
 }
 
 .b-news__panel-item:nth-of-type(4) {
-    flex: 0 0 calc(25% - 10px);
+    flex: 0 0 calc(25% - 15px);
     background-image: radial-gradient(#95e27a 50%, transparent 50%),
                       linear-gradient( to top, #95e27a 50%, transparent 50%);
     background-position: -70px 20px;
